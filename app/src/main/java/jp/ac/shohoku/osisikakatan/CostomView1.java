@@ -16,11 +16,11 @@ public class CustomView1 extends View {
     private Context context;
 
 
-　　　public CusotomView1(Context context, AttributeSet attrs){
+public CusotomView1(Context context, AttributeSet attrs){
          super(context, attrs);
          }
 
-         　　@Override
+         @Override
  protected void onDraw(Canvas canvas){
          super.onDraw(canvas);
          canvas.drawColor(Color.WHITE);
