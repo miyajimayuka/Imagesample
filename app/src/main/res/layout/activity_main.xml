@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
 
-    <jp.ac.shohoku.osisikakatan.CostomView1
+    <jp.ac.shohoku.osisikakatan.CustomView1
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_marginBottom="381dp"
