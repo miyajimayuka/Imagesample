@@ -12,6 +12,10 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
+/**
+ * @author カスタムビュー作成者　19B704 高安咲希
+ */
+
 public class CustomView1 extends View {
     private Context context;
 

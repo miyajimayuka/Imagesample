@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    /**
+    * レイアウト作成者　@author 19B712 宮島由佳
+    */
 
     <jp.ac.shohoku.osisikakatan.CustomView1
         android:layout_width="match_parent"
