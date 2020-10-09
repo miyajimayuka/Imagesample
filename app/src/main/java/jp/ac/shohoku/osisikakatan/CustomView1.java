@@ -21,14 +21,9 @@ public class CustomView1 extends View {
      * @param context
      * @param attrs
      */
-    public CustomView1(Context context) {
-        super(context);
-    }
-
     public CustomView1(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -45,6 +40,3 @@ public class CustomView1 extends View {
         canvas.drawBitmap(bmp, 0, 0, p); //画像の左上を Canvas の(0,0)に合わせて表示する
     }
 }
-
-
-
