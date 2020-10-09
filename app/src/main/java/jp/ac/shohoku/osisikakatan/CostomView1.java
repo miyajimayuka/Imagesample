@@ -15,3 +15,4 @@ public class CostomView1 extends View {
         super(context, attrs);
     }
 }
+
