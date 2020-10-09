@@ -29,9 +29,7 @@ public class CustomView1 extends View {
         super(context, attrs);
     }
 
-    /**
-     * 描画するメソッド
-     */
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
