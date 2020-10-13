@@ -1,5 +1,10 @@
 package jp.ac.shohoku.osisikakatan;
 
+/**
+ * @author カスタムビュー2作成者　19B704 高安咲希
+ * @author カスタムビュー2おまけ　19B712 宮島由佳
+ */
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
