@@ -35,7 +35,8 @@ public class CostomView2 extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.WHITE); //キャンバスの背景を白にする
+        //canvas.drawColor(Color.WHITE); //キャンバスの背景を白にする
+        canvas.drawColor(Color.LTGRAY); //キャンバスの背景をグレーにする
         int w = this.getWidth(); //View の幅を取得
         int h = this.getHeight(); //View の高さを取得
         Paint p = new Paint(); //描画する図形の属性
@@ -44,6 +45,8 @@ public class CostomView2 extends View {
         canvas.drawRect(new Rect(5, 5, w - 10, h - 10), p); //長方形を canvas に描く
         Resources rs = this.getContext().getResources(); //リソースを取得
         Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.gazou); //画像を取得
+        Bitmap bmp2 = BitmapFactory.decodeResource(rs, R.drawable.dempa);
         canvas.drawBitmap(bmp, 0, 0, p); //画像の左上を Canvas の(0,0)に合わせて表示する
+        canvas.drawBitmap(bmp2, 380,140, p);
     }
 }
