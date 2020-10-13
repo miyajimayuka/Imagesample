@@ -2,7 +2,7 @@ package jp.ac.shohoku.osisikakatan;
 
 /**
  * @author カスタムビュー2作成者　19B704 高安咲希
- * @author カスタムビュー2おまけ　19B712 宮島由佳
+ * @author カスタムビュー2おまけ部分　19B712 宮島由佳
  */
 
 import android.content.Context;
@@ -18,7 +18,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 
-public class CostomView2 extends View {
+public class CustomView2 extends View {
     private Context context;
 
     /**
@@ -28,7 +28,7 @@ public class CostomView2 extends View {
      * @param attrs
      */
 
-    public CostomView2(Context context, AttributeSet attrs) {
+    public CustomView2(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

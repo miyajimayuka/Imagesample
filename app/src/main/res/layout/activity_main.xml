@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <jp.ac.shohoku.osisikakatan.CostomView2
+    <jp.ac.shohoku.osisikakatan.CustomView2
         android:layout_width="match_parent"
         android:layout_height="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
