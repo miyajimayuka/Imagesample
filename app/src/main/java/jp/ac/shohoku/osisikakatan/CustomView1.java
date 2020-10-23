@@ -1,7 +1,7 @@
 package jp.ac.shohoku.osisikakatan;
 
 /**
- * @author カスタムビュー1作成者・おまけ　19B704 高安咲希
+ * @author カスタムビュー1作成者　19B704 高安咲希
  */
 
 import android.content.Context;
