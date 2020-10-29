@@ -18,7 +18,7 @@ package jp.ac.shohoku.osisikakatan;
      private Paint mPaint = new Paint(); //描画用のスタイル設定など
      private Bitmap mBmp[] = new Bitmap[5]; //表示用の Bitmap
      private int mTop, mLeft, mW, mH; //画像の幅と高さ
-     private int i;
+     private int i;  //カウント数
 
 
      /**
