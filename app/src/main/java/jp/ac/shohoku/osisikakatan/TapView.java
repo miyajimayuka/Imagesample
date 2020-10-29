@@ -16,7 +16,7 @@ package jp.ac.shohoku.osisikakatan;
  */
  public class TapView extends View {
      private Paint mPaint = new Paint(); //描画用のスタイル設定など
-     private Bitmap mBmp;//[] = new Bitmap[5]; //表示用の Bitmap
+     private Bitmap mBmp[] = new Bitmap[5]; //表示用の Bitmap
      private int mTop, mLeft, mW, mH; //画像の幅と高さ
      private int i;  //カウント数
 
@@ -31,14 +31,14 @@ package jp.ac.shohoku.osisikakatan;
          super(context, attrs);
          Resources rs = this.getResources(); //リソースを取得 (R クラスから取得)
          mBmp = BitmapFactory.decodeResource(rs, R.drawable.omoti); //リソースから画像を取得
-         //mBmp[1] = BitmapFactory.decodeResource(rs, R.drawable.baaa); //リソースから画像を取得
-         //mBmp[2] = BitmapFactory.decodeResource(rs, R.drawable.oko); //リソースから画像を取得
-         //mBmp[3] = BitmapFactory.decodeResource(rs, R.drawable.siro); //リソースから画像を取得
-         //mBmp[4] = BitmapFactory.decodeResource(rs, R.drawable.zukyun); //リソースから画像を取得
+         mBmp[1] = BitmapFactory.decodeResource(rs, R.drawable.baaa); //リソースから画像を取得
+         mBmp[2] = BitmapFactory.decodeResource(rs, R.drawable.oko); //リソースから画像を取得
+         mBmp[3] = BitmapFactory.decodeResource(rs, R.drawable.siro); //リソースから画像を取得
+         mBmp[4] = BitmapFactory.decodeResource(rs, R.drawable.zukyun); //リソースから画像を取得
          mTop = 100;
          mLeft = 100;
-         mW = mBmp.getWidth();
-         mH = mBmp.getHeight();
+         mW = mBmp[i].getWidth();
+         mH = mBmp[i].getHeight();
      }
 
      /**
@@ -49,7 +49,7 @@ package jp.ac.shohoku.osisikakatan;
      protected void onDraw(Canvas canvas) {
          super.onDraw(canvas);
          canvas.drawColor(Color.WHITE);
-         canvas.drawBitmap(mBmp, mLeft, mTop, mPaint);
+         canvas.drawBitmap(mBmp[i], mLeft, mTop, mPaint);
      }
 
      /*
@@ -65,12 +65,12 @@ package jp.ac.shohoku.osisikakatan;
          mLeft = x - mW / 2;//描画場所を変更
          mTop = y - mH / 2;
 
-         //if(i>=4) {
-             //i=0;
-         //}
-         //else {
-             //i++;
-         //}
+         if(i>=4) {
+             i=0;
+         }
+         else {
+             i++;
+         }
 
          invalidate(); //再描画する
 
