@@ -30,7 +30,7 @@ package jp.ac.shohoku.osisikakatan;
      public TapView(Context context, AttributeSet attrs) {
          super(context, attrs);
          Resources rs = this.getResources(); //リソースを取得 (R クラスから取得)
-         mBmp = BitmapFactory.decodeResource(rs, R.drawable.omoti); //リソースから画像を取得
+         mBmp[0] = BitmapFactory.decodeResource(rs, R.drawable.omoti); //リソースから画像を取得
          mBmp[1] = BitmapFactory.decodeResource(rs, R.drawable.baaa); //リソースから画像を取得
          mBmp[2] = BitmapFactory.decodeResource(rs, R.drawable.oko); //リソースから画像を取得
          mBmp[3] = BitmapFactory.decodeResource(rs, R.drawable.siro); //リソースから画像を取得
